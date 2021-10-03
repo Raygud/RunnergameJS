@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Pointsfont;
+    src: url(/fonts/SuperMario256.ttf);
+  }
+
+body{
+    overflow: hidden;
+}
+
+h1{
+    position: absolute;
+    right: 50px;
+    font-size: 80px;
+    color: white;
+    text-shadow: black 5px 5px;
+    font-family: Pointsfont;
+}
+
+#limits{
+    position: relative;
+    width: 1920px;
+    height: 1024px;
+    background-color: rgb(38, 190, 69);
+    overflow: hidden;
+}
+
+#BackGround{
+    position: absolute;
+    left: 0;
+    animation-timing-function: linear;
+}
+
+.BackGroundMove{
+    animation: backgroundmove 60s infinite;
+}
+
+#Clouds{
+    position: absolute;
+    top: -1vw;
+    animation-timing-function: linear;
+    }
+    .CloudMove{
+        animation: cloudmove 110s infinite;
+    }
+    
+    #two{
+        left: 4096px;
+    }
+    #three{
+        left: 8192px;
+    }
+    
+    #twoc{
+        left: 213.3vw;
+    }
+    #threec{
+        left: 416.6vw;
+    }
+    
+    img{
+        position: absolute;
+    }
+
+    #Runner{
+        background-size: cover;
+        position: absolute;
+        top: 460px;
+        width: 43px;
+        height: 115px;
+    }
+
+@-webkit-keyframes backgroundmove{
+    0% {left: 0px;}
+    99.99% {left: -8192px;}
+    100%{left: 0px;}
+}
+
+@-webkit-keyframes cloudmove{
+    0% {left: 0px;}
+    99.99% {left: -8192px;}
+    100%{left: 0px;}
+}
+
+@-webkit-keyframes Jumper{
+    0% {top: 460px;}
+    30% {top: 380px;}
+    70% {top: 380px;}
+    100%{top: 460px;}
+}
+
+@-webkit-keyframes movebox{
+    0% {right: -100px;}
+    100%{right: 2000px;}
+}
+
+button{
+    position: absolute;
+}
+
+#BoxObst{
+    background-image: url(/imgs/AsheTray.png);
+    position: absolute;
+    top: 500px;
+    width: 40px;
+    height: 80px;
+    z-index: 10;
+}
+
+#RedBull{
+    background-image: url(/imgs/RedbullBoost.png);
+    position: absolute;
+    top: 370px;
+    width: 40px;
+    height: 80px;
+    z-index: 10;
+    transition: 200ms ease-in-out;
+
+}
+
+.BoxObst{
+    animation: movebox 10s linear infinite;
+    visibility: visible;
+}
+
+.BoxObst1{
+    animation: movebox 15s linear infinite;
+    visibility: visible;
+}
+
+
+.jump{
+    animation: Jumper 0.6s linear;
+    
+}
+
+.Boost{
+    transition: 500ms ease-in-out;
+}
+
+
+
+
+
+

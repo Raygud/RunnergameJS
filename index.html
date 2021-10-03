@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Securita</title>
+</head>
+<body>
+    <audio id="HitSound">
+        <source src="/sounds/Ugh.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="BoostSound">
+        <source src="/sounds/Boosted.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div id="limits">
+        <div id="BoxObst"></div>
+        <div id="BackGround"><img src="imgs/BackGround.png" alt=""><img src="imgs/BackGround.png" alt="" id="two"><img src="imgs/BackGround.png" alt="" id="three"></div>
+        <div id="Clouds"><img src="imgs/Clouds.png" alt=""><img src="imgs/Clouds.png" alt="" id="twoc"><img src="imgs/Clouds.png" alt="" id="threec"></div>
+        <div id="Runner" class="Runner"></div>
+        <div id="RedBull"></div>
+        <button onclick="moving()">hello make this shit movee</button>
+        <button onclick="boost()" style="left: 8.4vw;">boost</button>
+        <h1 id="Points">0</h1>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
